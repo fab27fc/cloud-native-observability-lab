@@ -1,0 +1,46 @@
+apiVersion: monitoring.coreos.com/v1
+kind: PrometheusRule
+metadata:
+  name: observability-demo-alerts
+  namespace: default
+  labels:
+    release: monitoring
+spec:
+  groups:
+    - name: observability-demo.rules
+      rules:
+        - alert: KubernetesPodCrashLooping
+          expr: |
+            increase(kube_pod_container_status_restarts_total{
+              namespace="observability-demo"
+            }[10m]) > 2
+          for: 5m
+          labels:
+            severity: warning
+            namespace: observability-demo
+          annotations:
+            summary: Kubernetes pod is restarting repeatedly
+            description: >-
+              Pod {{ $labels.pod }} in namespace {{ $labels.namespace }} has
+              restarted more than twice during the last ten minutes.
+
+        - alert: ApplicationUnavailable
+          expr: |
+            kube_deployment_status_replicas_available{
+              namespace="observability-demo",
+              deployment="demo-app"
+            }
+            <
+            kube_deployment_spec_replicas{
+              namespace="observability-demo",
+              deployment="demo-app"
+            }
+          for: 5m
+          labels:
+            severity: critical
+            namespace: observability-demo
+          annotations:
+            summary: Demo application is unavailable
+            description: >-
+              Deployment {{ $labels.deployment }} has fewer available replicas
+              than requested in namespace {{ $labels.namespace }}.

@@ -1,0 +1,14 @@
+grafana:
+  adminPassword: REDACTED
+  service:
+    type: NodePort
+prometheus:
+  prometheusSpec:
+    storageSpec:
+      volumeClaimTemplate:
+        spec:
+          accessModes:
+          - ReadWriteOnce
+          resources:
+            requests:
+              storage: 10Gi
