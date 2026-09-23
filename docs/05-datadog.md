@@ -35,9 +35,9 @@ not committed to this repository.
 
 Save the Datadog cluster overview screenshot as:
 
-```text
-screenshots/datadog/11-datadog-cluster-overview.png
-```
+![Datadog cluster overview](../screenshots/datadog/11-datadog-cluster-overview.png)
+
+File: `screenshots/datadog/11-datadog-cluster-overview.png`
 
 The screenshot should include the cluster name, pod and node counts, CPU and
 memory usage, and the log stream.
