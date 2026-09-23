@@ -68,6 +68,26 @@ Relevant event:
 Warning  BackOff  ...  kubelet  Back-off restarting failed container crashloop-demo
 ```
 
+### Evidence Screenshots
+
+![CrashLoopBackOff pod](../screenshots/kubernetes/08-crashloop-pod.png)
+
+![CrashLoopBackOff pod description](../screenshots/kubernetes/09-crashloop-describe.png)
+
+![CrashLoopBackOff logs and events](../screenshots/kubernetes/06-crashloop-logs-events.png)
+
+![Grafana operations dashboard](../screenshots/grafana/07-kubernetes-operations-dashboard-final.png)
+
+![Datadog Kubernetes events](../screenshots/datadog/14-datadog-kubernetes-events.png)
+
+![Datadog error event](../screenshots/datadog/15-datadog-error-event.png)
+
+![Splunk HEC logs](../screenshots/splunk/17-splunk-hec-logs.png)
+
+![Splunk search by pod](../screenshots/splunk/18-splunk-search-by-pod.png)
+
+![Splunk search by namespace](../screenshots/splunk/19-splunk-search-by-namespace.png)
+
 ## Root Cause
 
 The container command deliberately exits with code 1:
