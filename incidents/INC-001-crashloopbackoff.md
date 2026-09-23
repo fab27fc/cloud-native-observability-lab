@@ -95,6 +95,8 @@ This incident was correlated with:
 
 ## Conclusion
 
-The incident was caused by the intentionally failing container command and
-confirmed by pod description, events, and log output. The failure is fully
-reproducible and suitable for RCA and alert validation.
+The container intentionally exited with code 1, causing a `CrashLoopBackOff`.
+Kubernetes restarted the pod repeatedly, Prometheus fired the alert, Grafana
+showed the issue, Datadog captured the event, and Splunk received the logs.
+Evidence was saved in the required screenshot folders and no secrets were found
+in the repository.
