@@ -68,6 +68,62 @@ Incident correlation:
 	`screenshots/splunk/18-splunk-search-by-pod.png`, and
 	`screenshots/splunk/19-splunk-search-by-namespace.png`
 
+## Embedded Evidence
+
+The screenshots below are embedded from the canonical files listed above.
+
+### Kubernetes
+
+![Kubernetes nodes ready](../screenshots/kubernetes/01-nodes-ready.png)
+
+![Demo application running](../screenshots/kubernetes/02-demo-app-running.png)
+
+![CrashLoopBackOff logs and events](../screenshots/kubernetes/06-crashloop-logs-events.png)
+
+![CrashLoopBackOff pod](../screenshots/kubernetes/08-crashloop-pod.png)
+
+![CrashLoopBackOff pod description](../screenshots/kubernetes/09-crashloop-describe.png)
+
+![CrashLoopBackOff logs](../screenshots/kubernetes/10-crashloop-logs.png)
+
+![CrashLoopBackOff events](../screenshots/kubernetes/11-crashloop-events.png)
+
+### Prometheus
+
+![Prometheus targets](../screenshots/prometheus/03-prometheus-targets.png)
+
+### Grafana
+
+![Grafana pods by phase](../screenshots/grafana/04-grafana-pods-by-phase.png)
+
+![Grafana CPU usage by namespace](../screenshots/grafana/05-grafana-cpu-usage-by-namespace.png)
+
+![Grafana memory usage by namespace](../screenshots/grafana/06-grafana-memory-usage-by-namespace.png)
+
+![Kubernetes operations dashboard](../screenshots/grafana/07-kubernetes-operations-dashboard-final.png)
+
+### Datadog
+
+![Datadog cluster overview](../screenshots/datadog/11-datadog-cluster-overview.png)
+
+![Datadog Kubernetes pods](../screenshots/datadog/12-datadog-kubernetes-pods.png)
+
+![Datadog CPU and memory](../screenshots/datadog/13-datadog-cpu-memory.png)
+
+![Datadog Kubernetes events](../screenshots/datadog/14-datadog-kubernetes-events.png)
+
+![Datadog error event](../screenshots/datadog/15-datadog-error-event.png)
+
+### Splunk
+
+![Splunk Collector DaemonSet](../screenshots/splunk/16-splunk-collector-daemonset.png)
+
+![Splunk HEC logs](../screenshots/splunk/17-splunk-hec-logs.png)
+
+![Splunk search by pod](../screenshots/splunk/18-splunk-search-by-pod.png)
+
+![Splunk search by namespace](../screenshots/splunk/19-splunk-search-by-namespace.png)
+
 ## Completion Criteria
 
 The evidence set is complete when every requirement has at least one screenshot
