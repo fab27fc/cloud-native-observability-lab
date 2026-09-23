@@ -87,11 +87,11 @@ and the pod to enter a repeated restart loop. The behavior matches the expected
 
 This incident was correlated with:
 
-- Kubernetes pod state and events
+- Kubernetes pod state and events ([pod status](../screenshots/kubernetes/08-crashloop-pod.png), [describe output](../screenshots/kubernetes/09-crashloop-describe.png), and [logs/events](../screenshots/kubernetes/06-crashloop-logs-events.png))
 - Prometheus custom alert `KubernetesPodCrashLooping`
-- Grafana dashboard panels for pod health and restarts
-- Datadog events and Kubernetes metadata (later section)
-- Splunk log collection (later section)
+- Grafana dashboard panels for pod health and restarts ([dashboard](../screenshots/grafana/07-kubernetes-operations-dashboard-final.png))
+- Datadog events and Kubernetes metadata ([Kubernetes events](../screenshots/datadog/14-datadog-kubernetes-events.png) and [error event](../screenshots/datadog/15-datadog-error-event.png))
+- Splunk log collection and search ([HEC logs](../screenshots/splunk/17-splunk-hec-logs.png), [pod search](../screenshots/splunk/18-splunk-search-by-pod.png), and [namespace search](../screenshots/splunk/19-splunk-search-by-namespace.png))
 
 ## Conclusion
 

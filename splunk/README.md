@@ -2,20 +2,17 @@
 
 ## Purpose
 
-This folder contains the planned configuration and notes for sending
+This folder contains the configuration and notes for sending
 Kubernetes container logs to Splunk Cloud through the Splunk OpenTelemetry
 Collector and HTTP Event Collector (HEC).
 
 ## Current Status
 
-Splunk is not installed in the Kubernetes cluster yet. There is currently no
-Splunk namespace, Collector pod, Helm release, or HEC configuration in this
-repository.
+Splunk has been validated in the Kubernetes environment. The Collector runs in
+the `splunk-otel` namespace, forwards Kubernetes logs through HEC, and the
+events are searchable in Splunk Cloud.
 
-Do not create a fake screenshot or claim that logs were received until the
-Collector and Splunk search have been validated.
-
-## Planned Flow
+## Data Flow
 
 ```text
 Kubernetes container logs -> Splunk OpenTelemetry Collector -> Splunk HEC
@@ -23,7 +20,7 @@ Kubernetes container logs -> Splunk OpenTelemetry Collector -> Splunk HEC
 
 ## Required Values
 
-The future installation will require:
+The installation requires:
 
 - Splunk Cloud HEC endpoint;
 - HEC token;
@@ -31,4 +28,4 @@ The future installation will require:
 - a Collector configuration with the Kubernetes metadata processor.
 
 HEC tokens must be stored in a Kubernetes Secret and must never be committed
-to Git.
+to Git. Validation evidence is stored in `screenshots/splunk/`.
