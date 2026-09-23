@@ -33,6 +33,8 @@ Evidence:
 - File: `screenshots/grafana/04-grafana-pods-by-phase.png`
 - Evidence ID: `E04`
 
+![Grafana pods by phase](../screenshots/grafana/04-grafana-pods-by-phase.png)
+
 ### CPU Usage by Namespace
 
 PromQL query:
@@ -55,6 +57,8 @@ Evidence:
 - File: `screenshots/grafana/05-grafana-cpu-usage-by-namespace.png`
 - Evidence ID: `E05`
 
+![Grafana CPU usage by namespace](../screenshots/grafana/05-grafana-cpu-usage-by-namespace.png)
+
 ### Memory Usage by Namespace
 
 PromQL query:
@@ -76,6 +80,8 @@ Evidence:
 
 - File: `screenshots/grafana/06-grafana-memory-usage-by-namespace.png`
 - Evidence ID: `E06`
+
+![Grafana memory usage by namespace](../screenshots/grafana/06-grafana-memory-usage-by-namespace.png)
 
 ### Network Traffic
 
@@ -179,3 +185,5 @@ Evidence:
 
 - File: `screenshots/grafana/07-kubernetes-operations-dashboard-final.png`
 - Evidence ID: `E07`
+
+![Kubernetes operations dashboard](../screenshots/grafana/07-kubernetes-operations-dashboard-final.png)

@@ -41,3 +41,13 @@ File: `screenshots/datadog/11-datadog-cluster-overview.png`
 
 The screenshot should include the cluster name, pod and node counts, CPU and
 memory usage, and the log stream.
+
+Additional Datadog evidence:
+
+![Datadog Kubernetes pods](../screenshots/datadog/12-datadog-kubernetes-pods.png)
+
+![Datadog CPU and memory](../screenshots/datadog/13-datadog-cpu-memory.png)
+
+![Datadog Kubernetes events](../screenshots/datadog/14-datadog-kubernetes-events.png)
+
+![Datadog error event](../screenshots/datadog/15-datadog-error-event.png)

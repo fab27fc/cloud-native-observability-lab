@@ -58,3 +58,13 @@ Expected evidence files:
 - `screenshots/splunk/17-splunk-hec-logs.png`
 - `screenshots/splunk/18-splunk-search-by-pod.png`
 - `screenshots/splunk/19-splunk-search-by-namespace.png`
+
+### Embedded Evidence
+
+![Splunk Collector DaemonSet](../screenshots/splunk/16-splunk-collector-daemonset.png)
+
+![Splunk HEC logs](../screenshots/splunk/17-splunk-hec-logs.png)
+
+![Splunk search by pod](../screenshots/splunk/18-splunk-search-by-pod.png)
+
+![Splunk search by namespace](../screenshots/splunk/19-splunk-search-by-namespace.png)
